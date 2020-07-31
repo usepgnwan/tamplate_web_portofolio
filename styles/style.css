@@ -1,0 +1,593 @@
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Merriweather|Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body{
+	font-family:  'Open Sans',sans-serif;
+	margin: 0;
+   	padding: 0;
+   	background: #deeff7;
+}
+nav{
+	width: 100%;
+	background-color: #00a2e8;
+	min-height: 60px;
+	padding: 10px;
+	position: -webkit-sticky; /* jika anda menggunakan safari */
+    position: sticky;
+    top: 0;
+}
+nav h4{
+	float: left;
+	display: inline-block;
+	margin-left: 40px;
+	color: white;
+	font-size: 30px;
+}
+ul{
+
+	float: right;
+    margin-right: 30px;
+}
+li{
+	display: inline-block;
+	margin-right: 20px;
+	padding-top: 10px;
+}
+li a{
+	color: white;
+	text-decoration: none;
+  	font-size: 20px;
+}
+li a:hover{
+	font-weight: bold;
+	
+}
+
+.jumbotron{
+
+	overflow: auto;
+	padding: 0px;
+	min-height: 900px;
+	width: 100%;
+	background-repeat: no-repeat;
+	overflow: auto;
+    background: url('../assets/banner3.jpg');
+}
+
+.tag-jumbotron a{
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 30px;
+	width: 300px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+   	background: #deeff7;
+	color: #00a2e8;
+}
+.tag-jumbotron a:hover{
+   	background: #00ae28;
+	color: white;
+}
+.tag-jumbotron{
+	float: left;
+	width: 60%;
+	margin-top: 130px;
+	padding-left: 100px;
+	padding-top: 40px;
+}
+.tag-jumbotron h3,h1,h2{
+	color: white;
+}
+
+.tag-jumbotron h3{
+	margin-bottom: 15px;
+	font-size: 40px;
+}
+.tag-jumbotron h1{
+	font-size: 70px;
+	font-weight: bold;
+}
+.tag-jumbotron h2{
+	font-size: 50px;
+}
+.icon-jumbotron{
+	float: right;
+	width: 40%;
+	margin-top: 345px;
+}
+header{
+	display: inline;
+}
+
+/*bagian container*/
+.service {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.flex-column{
+	display: flex;
+	flex-direction: row;
+	width: 65%;
+	margin: 30px auto;
+}
+.flex-row{
+	flex-basis: 30%;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	background: #bbd4df;
+}
+.flex-row h3,p{
+	color: #64686a;
+}
+.flex-row img{
+	padding-top: 10px;
+	width: 35%;
+}
+.card-tag{
+	max-width: 50%;
+	margin: 0 auto;
+
+}
+.card-tag h3,p{
+	color: #64686a;
+	text-align: center;
+
+}
+.card-tag h3{
+	font-size: 35px;	
+}
+/*bagian about*/
+.about{
+
+	min-height: 320px;
+}
+.flex-column-about{
+	background: #bbd4df;
+	width: 90%;
+	height: 200px;
+	margin-top: 70px;
+
+}
+.about-profile{
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding: 20px 40px;
+}
+.about-profile h3,p,h2{
+	color: #64686a;
+	text-align: center;
+
+}
+.about-profile h3{
+	font-size: 20px;
+
+}
+.about-profile h2{
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: -5px;
+
+}
+.foto-profile img{
+	margin-left: 70px;
+	margin-top: -70px;
+
+   box-shadow: 0 4px 10px 0 black;
+}
+.foto-profile{
+	float: right;
+	width: 30%;
+
+}
+
+/*bagian experience*/
+.flex-row-experience{
+	flex-basis: 30%;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	background: #bbd4df;
+}
+.circle{
+
+	border-radius: 100%;
+	height: 100px;
+	width: 100px;
+	background: #a0b4bd;
+	text-align: center;
+	line-height: 100px;
+	margin-left: 30%;
+	margin-top: -30px;
+	margin-bottom: 25px;
+}
+.circle h1{
+	color: #64686a;
+	font-size: 40px;
+	font-weight: bold;
+}
+.flex-row-experience h3{
+	margin-top: -20px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.flex-row-experience h3,p{
+	color: #64686a;
+}
+.item{
+	width: 100%;
+	overflow: auto;
+	max-height: 85px;
+}
+
+/*bagian contact*/
+.contact{
+	margin-top: -10px;
+}
+.flex-column-contact{
+	display: flex;
+	flex-direction: row;
+	width: 65%;
+	margin: 0 auto;
+}
+.flex-row-contact{
+	display: flex;
+	flex-basis: 70%;
+	margin: 0 auto;
+}
+.flex-row-contact span{
+	padding: 10px;
+	color: #64686a;
+}
+.double-contact{
+	flex-basis: 35%;
+}
+.flex-row-contact img{
+	width: 50px;
+	height: 50px;
+}
+/*bagian komen*/
+.comment{
+	background: url('../assets/banner-contact.jpg');
+	min-height: 700px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.isi-comment{
+	float: left;
+	width: 55%;
+	min-height: 600px;
+	background: #bbd4df;
+	margin-left: 10%;
+	margin-top: 40px;	
+   box-shadow: 1px 2px 7px  black;
+
+	padding: 50px;
+}
+.icon-comment{
+	float: right;
+	width: 35%;
+}
+
+/*bagian footer*/
+footer{
+	min-height: 80px;
+	padding: 30px;
+	text-align: center;
+	background: #155f7f;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+.isi-comment input,textarea{
+	display: block;
+	width: 100%;
+	margin-bottom: 7px;
+	padding: 30px;
+	background: #deeff7;
+	color: #64686a;
+	border: none;
+	font-size: 15px;
+
+}
+.isi-comment button{
+	width: 100%;
+	min-height: 80px;
+	font-size: 20px;
+	background: #deeff7;
+	border: none;
+	color: #64686a;
+	cursor: pointer;
+}
+.isi-comment button:hover{
+   	background: #00ae28;
+	color: white;
+
+}
+
+.item-coment{
+	width: 100%;
+	overflow: auto;
+	margin-top: 20px;
+	height: 220px;
+}
+.item-coment p{
+	text-align: left;
+	margin-bottom: 10px;
+}
+.item-coment a{
+	text-decoration: none;
+	color: #00a2e8;
+	font-size: 15px;
+	text-align: right;
+	padding: 8px;
+	margin-left: 85%;
+	background: #deeff7;
+	color: #64686a;
+	border-radius: 5px;
+}
+
+.item-coment a:hover{
+	background: #00ae28;
+	color: white;
+}
+
+
+/*responsive*/
+/*media query responsive phone*/
+@media screen and (max-width: 513px) {
+ 	/*bagian nav*/
+ 	nav h4{
+		display: none;
+	}
+	ul{
+		float: right;
+	    margin-right: 0px;
+	}
+	li{
+		margin-right: 2px;
+		padding-top: 5px;
+	}
+	li a{
+	  	font-size: 15px;
+	}
+	/*baian jumbotron*/
+	.icon-jumbotron{
+ 		display: none;
+ 	}  /*//hilangkan icon*/
+
+	.tag-jumbotron a{
+		text-decoration: none;
+		margin-top: 20px;
+		padding: 10px;
+		border-radius: 30px;
+		width: 200px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+	   	background: #deeff7;
+		color: #00a2e8;
+	}
+	.tag-jumbotron a:hover{
+	   	background: #00ae28;
+		color: white;
+	}
+	.tag-jumbotron{
+		float: left;
+		width: 100%;
+		margin-top: 130px;
+		padding-left: 40px;
+		padding-top: 40px;
+	}
+	.tag-jumbotron h3,h1,h2{
+		color: white;
+	}
+
+	.tag-jumbotron h3{
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	.tag-jumbotron h1{
+		font-size: 40px;
+		font-weight: bold;
+	}
+	.tag-jumbotron h2{
+		font-size: 35px;
+	}
+	/*bagian card tag*/
+
+	.card-tag{
+		max-width: 80%;
+		margin: 0 auto;
+
+	}
+	.card-tag h3,p{
+		color: #64686a;
+		text-align: center;
+
+	}
+	.card-tag h3{
+		font-size: 25px;	
+	}
+	.card-tag p{
+		font-size: 15px;	
+	}
+
+
+	.service {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.flex-column{		
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.flex-row{
+	flex-basis: 100%;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	background: #bbd4df;
+	}
+	/*about*/
+
+	
+	.flex-column-about{
+		background: #bbd4df;
+		width: 90%;
+		height: 350px;
+		overflow: auto;
+		margin-top: 0 auto;
+
+	}
+	.about-profile{
+		float: left;
+		width: 100%;
+		text-align: center;
+		padding: 20px 40px;
+	}
+	.about-profile h3,p,h2{
+		color: #64686a;
+		text-align: center;
+
+	}
+	.about-profile h3{
+		font-size: 20px;
+
+	}
+	.about-profile h2{
+		font-size: 25px;
+		font-weight: bold;
+		margin-top: -5px;
+
+	}
+	.about-profile p{
+		font-size: 15px;
+
+	}
+	.foto-profile{
+		display: none;
+
+	}
+
+
+	.flex-row-experience{
+		flex-basis: 100%;
+		width: 200px;
+		height: 200px;
+		background: #bbd4df;
+	}	
+	.flex-column-contact{
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+	}
+	
+	.flex-row-contact span{
+		text-align: left;
+		padding: 10px;
+		color: #64686a;
+	}
+
+	.icon-comment{
+		display: none;
+	}
+
+	.isi-comment{
+		float: left;
+		width: 80%;
+		min-height: 550px;
+		background: #bbd4df;
+		margin-top: 40px;	
+	   box-shadow: 1px 2px 7px  black;
+	   padding: 10px;
+
+	}
+
+	.item-coment a{
+		text-decoration: none;
+		color: #00a2e8;
+		font-size: 15px;
+		text-align: right;
+		padding: 5px;
+		margin-left: 65%;
+		background: #deeff7;
+		color: #64686a;
+		border-radius: 5px;
+	}
+}
+@media screen and (max-width: 900px) {
+ 	nav h4{
+		display: none;
+	}
+	.icon-jumbotron{
+	 		display: none;
+ 	} 
+
+	.tag-jumbotron{
+		float: left;
+		width: 100%;
+		margin-top: 130px;
+		padding-left: 60px;
+		padding-top: 40px;
+	}
+	/*bagian tag*/
+	.card-tag{
+		max-width: 80%;
+		margin: 0 auto;
+
+	}
+	.flex-column{
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+		margin: 10px auto;
+	}
+	.flex-row{
+		flex-basis: 100%;
+		margin: 10px;
+		width: 200px;
+		height: 200px;
+		background: #bbd4df;
+	}
+	.flex-row h3,p{
+		color: #64686a;
+	}
+
+	.foto-profile{
+		display: none;
+
+	}
+	.about-profile{
+		width: 100%;
+		text-align: center;
+		padding: 20px 40px;
+	}
+
+	.flex-column-about{
+		background: #bbd4df;
+		width: 90%;
+		height: 300px;
+		overflow: auto;
+
+		margin-top: 0 auto;
+	}
+
+	*{
+			font-size: 15px;
+		}
+
+}
